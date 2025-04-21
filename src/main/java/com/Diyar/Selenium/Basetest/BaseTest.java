@@ -137,7 +137,7 @@ public class BaseTest {
 		}
 		System.out.println("boolVideoRecording : " + boolVideoRecording);
 		
-	/*	
+		
 		if (boolVideoRecording) {
 			try {
 				Util.createFolder(sRecordingsPath);
@@ -147,7 +147,7 @@ public class BaseTest {
 				e.printStackTrace();
 			}
 		}	 
-*/
+
 
 	}
 
@@ -170,13 +170,13 @@ public class BaseTest {
 
 		browser.openBrowser(context.getCurrentXmlTest().getParameter("browsername"), booleanBrowserStack);
 
-		/*
+		
 		  if (boolVideoRecording) {
 		  
 		  try { recorder.start(); } catch (ATUTestRecorderException e) {
 		  e.printStackTrace(); } 
 		  }
-		 */
+		 
 	}
 
 	/**
@@ -265,11 +265,11 @@ public class BaseTest {
 	@AfterClass
 	protected void closeActiveBrowser() {
 
-/*		
+		
 		  if (boolVideoRecording) { try { recorder.stop(); } catch
 		  (ATUTestRecorderException e) { // TODO Auto-generated catch block
 		  e.printStackTrace(); } }
-*/		 
+		 
 
 		System.out.println("after class execution in closing ActiveBrowser :");
 		getDriver().quit();
